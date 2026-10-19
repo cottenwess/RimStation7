@@ -1,0 +1,66 @@
+<meta charset="utf-8">
+<title>Rim Station 7</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400;500;600&family=Silkscreen&display=swap">
+<style>
+/*@CSS*/
+</style>
+
+<div class="app">
+  <div class="main">
+    <section class="view" id="view" aria-label="Station view. Drag to pan, scroll to zoom.">
+      <canvas id="cv"></canvas>
+      <div class="hud-title brand">Rim Station 7<small>Meridian Exobiotics · xenobiology institute</small></div>
+      <div class="hud-bar"><div class="stats" id="stats"></div></div>
+      <div class="hud-tr">
+        <div class="speed" role="group" aria-label="Game speed">
+          <button type="button" data-act="speed:0" id="sp0">Pause</button>
+          <button type="button" data-act="speed:1" id="sp1">1x</button>
+          <button type="button" data-act="speed:3" id="sp3">3x</button>
+          <button type="button" data-act="speed:6" id="sp6">6x</button>
+        </div>
+        <div class="zoom" role="group" aria-label="Zoom">
+          <button type="button" data-act="zoom:-1" aria-label="Zoom out">−</button>
+          <button type="button" data-act="zoom:0" aria-label="Fit station to view">Fit</button>
+          <button type="button" data-act="zoom:1" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+      <div class="ovl" id="study" hidden></div>
+      <div class="ovl" id="report" hidden></div>
+      <div class="plan-ovl" id="evening" hidden></div>
+      <div class="plan-ovl" id="planner" hidden></div>
+      <div class="plan-ovl" id="mission" hidden></div>
+      <aside class="inspect" id="inspect" hidden aria-live="polite"></aside>
+      <div class="toast" id="toast" hidden><canvas id="toastPt" width="16" height="16"></canvas><div><b id="toastName"></b><span id="toastText"></span></div></div>
+      <div class="ovl breach" id="breach" hidden></div>
+      <div class="ovl" id="pub" hidden></div>
+      <div class="ovl" id="end" hidden></div>
+      <div class="dlg" id="dlg" hidden>
+        <div class="dlg-pt"><canvas id="dlgPt" width="16" height="16"></canvas><span id="dlgMood"></span></div>
+        <div class="dlg-body">
+          <div><div class="dlg-name" id="dlgName"></div><div class="dlg-role" id="dlgRole"></div></div>
+          <p class="dlg-text" id="dlgText"></p>
+          <div class="dlg-choices" id="dlgChoices" hidden></div>
+          <div class="dlg-hint" id="dlgHint">Click or press Space</div>
+        </div>
+      </div>
+    </section>
+    <aside class="panel">
+      <nav class="tabs" role="tablist">
+        <button type="button" role="tab" data-act="tab:research" id="tab-research">Research</button>
+        <button type="button" role="tab" data-act="tab:planets" id="tab-planets">Planets</button>
+        <button type="button" role="tab" data-act="tab:papers" id="tab-papers">Papers</button>
+        <button type="button" role="tab" data-act="tab:staff" id="tab-staff">Staff</button>
+        <button type="button" role="tab" data-act="tab:lab" id="tab-lab">Station</button>
+        <button type="button" role="tab" data-act="tab:notes" id="tab-notes">Log</button>
+      </nav>
+      <div class="pane" id="pane"></div>
+    </aside>
+  </div>
+</div>
+
+<script>
+/*@JS*/
+</script>

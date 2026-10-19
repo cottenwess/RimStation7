@@ -1,0 +1,8 @@
+dist/game.js
+tests/screenshots/
+__pycache__/
+.DS_Store
+node_modules/
+
+# Superseded by git history; the archive stays on disk, just untracked.
+rimstation7.tgz

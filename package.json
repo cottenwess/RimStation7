@@ -1,0 +1,14 @@
+{
+  "name": "rim-station-7",
+  "version": "0.6.0",
+  "private": true,
+  "description": "Isometric pixel-art xenobiology lab sim set at a black hole on the edge of the galaxy.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "check": "node tools/build.mjs && node --check dist/game.js",
+    "test": "node tools/build.mjs && python3 tests/smoke_playthrough.py",
+    "test:save": "node tools/build.mjs && python3 tests/smoke_save_load.py",
+    "test:planner": "node tools/build.mjs && python3 tests/smoke_planner.py"
+  }
+}
