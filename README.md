@@ -50,6 +50,7 @@ docs/DESIGN.md          how the game works today
 docs/ROADMAP.md         ideas and open threads
 docs/RELEASE_PLAN.md    plan for shipping on Steam, and what console would take
 docs/DESIGN_STAFF.md    the staff roster: stats, traits, roles, lab heads
+docs/PROPOSAL_LANDFALL.md  proposed re-premise: the lab is a ship that lands
 dist/                   built, playable game
 ```
 
